@@ -30,7 +30,7 @@
     <p>
       We use self hosted, privacy-friendly Plausible Analytics to collect anonymous usage metadata
       (diagram types, feature usage, etc.). All data is <a
-        href="https://p.mermaid.live/mermaid.live"
+        href="https://p.live.mermaid.kamataworks.com/mermaid.live"
         class="underline"
         target="_blank">publicly available</a
       >.
