@@ -7,6 +7,14 @@ import mermaid from 'mermaid';
 mermaid.registerLayoutLoaders(elkLayouts);
 const init = mermaid.registerExternalDiagrams([zenuml]);
 
+mermaid.registerIconPacks([
+  {
+    name: 'logos',
+    loader: () =>
+      fetch('https://unpkg.com/@iconify-json/logos@1/icons.json').then((res) => res.json()),
+  },
+]);
+
 export const render = async (
   config: MermaidConfig,
   code: string,
