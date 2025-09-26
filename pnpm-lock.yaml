@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@mermaid-js/parser': npm:@kamataryo/mermaid-js__parser@^0.6.2
+
 importers:
 
   .:
@@ -736,6 +739,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.30':
     resolution: {integrity: sha512-GQ7Nw5G2lTu/BtHTKfXhKHok2WGetd4XYcVKGx00SjAk8GMwgJM3zr6zORiPGuOE+/vkc90KtTosSSvaCjKb2Q==}
 
+  '@kamataryo/mermaid-js__parser@0.6.3':
+    resolution: {integrity: sha512-SkCUKZSm7rYh8I0YGkEKhLMDUru/OvC/sp4guzhddNgWLZa9i1tMgx9PQPLah7ieK7TOruQL39iIitd7QGbmFA==}
+
   '@lezer/common@1.2.3':
     resolution: {integrity: sha512-w7ojc8ejBqr2REPsWxJjrMFsA/ysDCFICn8zEOR9mrqzOu2amhITYuLD8ag6XZf0CFXDrhKqw7+tW8cX66NaDA==}
 
@@ -780,9 +786,6 @@ packages:
     resolution: {integrity: sha512-sUjwk4NWUpy9uaHypYSIGJDks10ZaZo5CHH9lx9xcmyqv9w7yvd4vecUmlUQxmlHStYO+aqSkYKX5/gFjDfypw==}
     peerDependencies:
       mermaid: ^10 || ^11
-
-  '@mermaid-js/parser@0.6.2':
-    resolution: {integrity: sha512-+PO02uGF6L6Cs0Bw8RpGhikVvMWEysfAyl27qTlroUB8jSWr1lL0Sf6zi78ZxlSnmgSY2AMMKVgghnN9jTtwkQ==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -4605,6 +4608,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  '@kamataryo/mermaid-js__parser@0.6.3':
+    dependencies:
+      langium: 3.3.1
+
   '@lezer/common@1.2.3': {}
 
   '@lezer/css@1.1.11':
@@ -4669,10 +4676,6 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
       - ts-node
-
-  '@mermaid-js/parser@0.6.2':
-    dependencies:
-      langium: 3.3.1
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -6773,7 +6776,7 @@ snapshots:
     dependencies:
       '@braintree/sanitize-url': 7.1.1
       '@iconify/utils': 3.0.2
-      '@mermaid-js/parser': 0.6.2
+      '@mermaid-js/parser': '@kamataryo/mermaid-js__parser@0.6.3'
       '@types/d3': 7.4.3
       cytoscape: 3.31.1
       cytoscape-cose-bilkent: 4.1.0(cytoscape@3.31.1)

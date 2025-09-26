@@ -130,6 +130,9 @@
     "ignoredBuiltDependencies": [
       "@tailwindcss/oxide",
       "vue-demi"
-    ]
+    ],
+    "overrides": {
+      "@mermaid-js/parser": "npm:@kamataryo/mermaid-js__parser@^0.6.2"
+    }
   }
 }
